@@ -1,9 +1,10 @@
-const express = require("express");
+import express from "express";
+import router from "./router.js";
+
 const app = express();
-const router = require("./router");
 
 app.use(express.json());
 app.use("/", router);
 
-const port = 3000;
+const port = 3010;
 app.listen(port, () => console.log(`Server is running on port ${port}`));

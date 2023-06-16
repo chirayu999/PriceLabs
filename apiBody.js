@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   operationName: "SearchRequestQuery",
   variables: {
     filterCounts: true,

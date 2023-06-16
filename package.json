@@ -12,8 +12,8 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "start": "node index.js",
-    "startDev": "nodemon index.js"
+    "start": "node index.mjs",
+    "startDev": "nodemon index.mjs"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/chirayu999/PriceLabs/issues"
   },
-  "homepage": "https://github.com/chirayu999/PriceLabs#readme"
+  "homepage": "https://github.com/chirayu999/PriceLabs#readme",
+  "type": "module"
 }
