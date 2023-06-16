@@ -31,16 +31,11 @@ export const getData = async (req, res) => {
       body: JSON.stringify(apiBody),
       headers: {
         "Content-Type": "application/json",
-        "User-Agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
       },
     });
 
     const jsonResponse = await response.json();
-
-    // res.send(jsonResponse);
     const listings = jsonResponse.data.results.listings;
-    console.log(listings, "what");
 
     await writeCsvFile(listings);
 
